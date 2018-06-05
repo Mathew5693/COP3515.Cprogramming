@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+
+
+
+	int coins = 0;
+	int choice = 0;
+	int change = 0;
+  int i = 0;
+
+
+
+
+
+	printf("Insert Coins:\n");
+
+
+	while(scanf("%d" ,coins) !=0)
+{
+printf("Insert Coins:\n");
+coins = coins + coins;
+
+}
+
+printf("Please select from the following menu: 1 -- Airheads, 2 -- Fun Dip, 3 -- Gummi Bears\n");
+printf("Enter your choice: "\n):
+scanf("%i" , &choice);
+
+switch(choice){
+
+case 1:
+
+if(i == 0 && coins > 25){
+change = coins - 25;
+printf("You have selected Airheads!\n Candy dispensing!\n Your change is", change "cents\n");
+i++; //cancels loop to prevent multiple unwanted purchases of airheads
+}
+break;
+
+case2:
+
+if(i == 0 && coins > 40){
+change = coins - 40;
+printf("You have selected Fun Dip!\n Candy dispensing!\n Your change is", change "cents\n");
+i++; //cancels loop to prevent forcing multiple unwanted purchases of fun dip
+}
+break;
+
+case3:
+
+if(i == 0 && coins > 20){
+change = coins - 20;
+printf("You have selected Gummi Bears!\n Candy dispensing!\n Your change is", change "cents\n");
+i++; //cancels loop to prevent forcing multiple unwanted purchases of fun dip
+}
+break;
+
+default:
+printf("You do not have sufficient funds or have not chosen an item. Please try again");
+break;
+
+
+
+}
+
+
+
+
+return 0;
+
+}
